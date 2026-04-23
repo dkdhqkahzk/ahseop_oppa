@@ -71,5 +71,47 @@ function renderScene(sceneKey) {
     });
 }
 
+// 메뉴 열고 닫기 로직
+const menuBtn = document.getElementById('menu-btn');
+const menuModal = document.getElementById('menu-modal');
+const closeBtn = document.getElementById('close-menu');
+
+menuBtn.onclick = () => menuModal.classList.remove('hidden');
+closeBtn.onclick = () => menuModal.classList.add('hidden');
+
+// 저장 기능
+function saveGame() {
+    // currentScene은 현재 진행 중인 스토리의 키값 (예: 'scene_01')
+    localStorage.setItem('sunbae_save_point', currentScene);
+    // 호감도 점수도 같이 저장하고 싶다면?
+    // localStorage.setItem('sunbae_love_score', loveScore);
+    
+    alert("선배와의 추억이 저장되었습니다!");
+    menuModal.classList.add('hidden');
+}
+
+// 불러오기 기능
+function loadGame() {
+    const savedScene = localStorage.getItem('sunbae_save_point');
+    
+    if (savedScene && storyData[savedScene]) {
+        currentScene = savedScene;
+        renderScene(currentScene);
+        alert("이전에 멈췄던 곳에서 시작합니다.");
+    } else {
+        alert("저장된 기록이 없습니다!");
+    }
+    menuModal.classList.add('hidden');
+}
+
+// 처음부터 기능
+function resetGame() {
+    if (confirm("정말 처음부터 다시 시작하시겠어요?")) {
+        currentScene = 'start';
+        renderScene(currentScene);
+        menuModal.classList.add('hidden');
+    }
+}
+
 // 초기 실행
 renderScene("start");
