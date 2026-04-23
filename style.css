@@ -17,7 +17,7 @@
     }
 
     #character-img {
-        height: 70%; /* 캐릭터가 화면 높이의 70%를 차지하게 */
+        height: 80%; /* 캐릭터가 화면 높이의 70%를 차지하게 */
     }
 
     #ui-container {
@@ -145,3 +145,17 @@ button {
 
 /* 숨김 처리용 클래스 */
 .hidden { display: none !important; }
+
+/* style.css */
+#status-bar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    z-index: 10;
+    border: 2px solid #ff4d4d;
+    color: #ff4d4d;
+}
