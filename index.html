@@ -19,15 +19,18 @@
                 </div>
         </div>
     </div>
-    <button id="menu-btn">Menu</button>
+    <button id="menu-btn" onclick="openMenu()" style="z-index: 9999;">Menu</button>
     <div id="menu-modal" class="hidden">
         <div class="menu-content">
             <h3>게임 설정</h3>
             <button onclick="saveGame()">현재 위치 저장하기</button>
             <button onclick="loadGame()">저장된 곳에서 시작</button>
             <button onclick="resetGame()">처음부터 시작</button>
-            <button id="close-menu">닫기</button>
+            <button id="close-menu" onclick="closeMenu()">닫기</button>
         </div>
+    </div>
+    <div id="status-bar">
+    <span id="love-status">선배와의 호감도: 0 ❤️</span>
     </div>
     <script src="script.js"></script>
 </body>
