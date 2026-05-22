@@ -96,7 +96,7 @@ const storyData = {
         ]
     },
     cafe1_4:{
-        text:"(시간을 보니 벌써 저녁이다.) 와 시간 와이렇게 빠르노? 니 집에 통금 없나",
+        text:"(시간을 보니 벌써 저녁이다.)\n와 시간 와이렇게 빠르노?\n니 집에 통금 없나",
         name: 선배,
         choices:[
             { text: "어 뭐 딱히 그런건 없는데.. 선배 이제 집 들어가셔야해요?", next: "cafe1_5", score: 0 },
@@ -116,7 +116,7 @@ const storyData = {
         background: "images/길거리.jpg",
         name: 선배,
         choices:[
-            { text: "헐헐헐헐 진짜요???? 안그래도 반에서도 저 혼자만 연제구라 서러웠는데..", next: "cafe1_7", score: 10},
+            { text: "헐헐헐헐 진짜요????\n안그래도 반에서도 저 혼자만 연제구라 서러웠는데..", next: "cafe1_7", score: 10},
         ]
     },
     cafe1_7:{
@@ -130,7 +130,7 @@ const storyData = {
         ]
     },
     cafe1_8:{
-        text:"(선배가 갑자기 놀란 표정으로) 뭐?",
+        text:"(선배가 갑자기 놀란 표정으로)\ㅜ뭐?",
         character: "images/선배_정색.png",
         background: "images/지하철.webp",
         name: 선배,
@@ -148,16 +148,16 @@ const storyData = {
         ]
     },
     day1end_1:{
-        text:"(선배가 잠깐 생각하더니)니 오늘부터 내 꼬붕할래?",
+        text:"(선배가 잠깐 생각하더니)\n니 오늘부터 내 꼬붕할래?",
         character: "images/선배_웃음.png",
         background: "images/지하철.webp",
         name: 선배,
         choices: [
-            { text: "(헉 너무 멋진 선배의 꼬붕이라니)ㅎ..헉 좋아요..!!!! 근데 선배 이제 양정역이라 내리셔야하지 않아요?", next: "day1end_2", score: 10, }
+            { text: "(헉 너무 멋진 선배의 꼬붕이라니)\nㅎ..헉 좋아요..!!!! 근데 선배 이제 양정역이라 내리셔야하지 않아요?", next: "day1end_2", score: 10, }
         ]
     },
     day1end_2:{
-        text:"아니, 나도 니랑 같이 내려야지. (선배가 웃으며) 니가 내 꼬붕이니까",
+        text:"아니, 나도 니랑 같이 내려야지.\n(선배가 웃으며) 니가 내 꼬붕이니까",
         character: "images/선배_웃음.png",
         background: "images/지하철.webp",
         name: 선배,
