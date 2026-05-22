@@ -267,8 +267,8 @@ const storyData = {
         background: "images/학교복도.png",
         name: 선배,
         choices:[
-            { text: "아, 네!", next: "day3start", score: 10 ,nextDay: true},
-            { text:"(ㅅㅂ진짜지랄이야) 아 네.", next: "day3start", score: -30 ,nextDay: true}
+            { text: "아, 네!", next: "day3", score: 10 ,nextDay: true},
+            { text:"(ㅅㅂ진짜지랄이야) 아 네.", next: "day3", score: -30 ,nextDay: true}
         ]
     },
     day2_5: {
@@ -599,7 +599,7 @@ const storyData = {
         character:"images/선배1.png",
         name:선배,
         choices:[
-            {text:"네! 좋아요!", next:"day3start",score:10, nextDay:true},
+            {text:"네! 좋아요!", next:"day3",score:10, nextDay:true},
         ]    
     },
     day2_7_2_12_1_1:{
@@ -607,7 +607,7 @@ const storyData = {
         character:"images/선배1.png",
         name:"나레이션",
         choices:[
-            {text:"(다음)", next:"day3start",score:0, nextDay:true},
+            {text:"(다음)", next:"day3",score:0, nextDay:true},
         ]
     },
     day2_7_2_12_2:{
