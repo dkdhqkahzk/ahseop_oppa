@@ -100,16 +100,20 @@ function renderScene(sceneKey, earnedScore = 0, nextDay = false, eventname) {
     }
     if (sceneKey === "day5start") { // Day 5가 시작되는 씬 키값에 맞게 수정하세요
         if (eventname === true) {
-            sceneKey = "day5start"; // 약속을 잡았다면 이벤트 씬으로 이동!
+            sceneKey = "day5start";
+            return;// 약속을 잡았다면 이벤트 씬으로 이동!
         } else {
-            sceneKey = "day6start"; // 약속이 없었다면 바로 Day 6로 건너뛰기!
+            sceneKey = "day6start";
+            return;// 약속이 없었다면 바로 Day 6로 건너뛰기!
         }
     }
-    if (sceneKey === "day7_29") {
-        if (loveScore >= 500){
-            sceneKey = "day7_30";
+    if (sceneKey === "day7_20") {
+        if (loveScore >= 300){
+            sceneKey = "day7_31";
+            return;
         } else {
             sceneKey = "고백 실패";
+            return;
         }
     }
     if (sceneKey === "start_reset") {
